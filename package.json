@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/aysp-99/project-x#readme",
   "dependencies": {
-    "babel-core": "^6.26.3"
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "install": "^0.13.0",
+    "npm": "^7.15.0"
   }
 }
