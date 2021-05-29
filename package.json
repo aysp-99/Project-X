@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/aysp-99/project-x/issues"
   },
-  "homepage": "https://github.com/aysp-99/project-x#readme"
+  "homepage": "https://github.com/aysp-99/project-x#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3"
+  }
 }
