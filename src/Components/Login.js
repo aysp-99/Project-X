@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Redirect} from 'react-router-dom';
+import '../style.css';
 
 
 export default class Login extends React.Component {
@@ -43,13 +44,18 @@ export default class Login extends React.Component {
             return <Redirect to="/landingpage"/>
         }
         return ( 
+            <div class="login">
+            <div class="login-triangle"></div>
+  
+            <h2 class="login-header">Log in</h2>
             <div>
-                <h1>LOGIN</h1>
-                <form onSubmit ={this.handleSubmit}>
-                    <input type="email" name="email" placeholder="Email-ID" value={this.state.email} onChange={this.onChange}/>
-                    <input type="password" name="password" placeholder="Code" value={this.state.password} onChange={this.onChange}/>
-                    <input type="submit"/>
+                
+                <form class="login-container" onSubmit ={this.handleSubmit}>
+                    <p><input type="email" name="email" placeholder="Email-ID" value={this.state.email} onChange={this.onChange}/></p>
+                    <p><input type="password" name="password" placeholder="Code" value={this.state.password} onChange={this.onChange}/></p>
+                   <p><input type="submit"/></p>
                 </form>
+            </div>
             </div>
          );
     }
